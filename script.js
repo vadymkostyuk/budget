@@ -10,12 +10,12 @@ function start (){
     }
 }
 start();
-var appData = {
+let appData = {
     budget: money,
     timeData: time,
     expenses: {},
     optionalExpenses: {},
-    income: '',
+    income: [],
     savings: true
 };
 
@@ -77,7 +77,7 @@ chooseOptExpenses();
 
 function detectDayBudget() {
     appData.moneyPerDay = (appData.budget / 30).toFixed();
-    alert("Ежедневный бюджет: " + appData.moneyPerDay + 'uah');
+    alert("Бюджет на 1 день составляет " + appData.moneyPerDay + "uah");
 }
 detectDayBudget();
 
